@@ -6,26 +6,26 @@
 export OKD_VERSION=3.11
 
 #OKD Master Node Configuration
-export OKD_MASTER_IP=10.168.13.3
+export OKD_MASTER_IP=68.183.238.161
 export OKD_MASTER_HOSTNAME=master
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_1_IP=167.71.200.18
+export OKD_WORKER_NODE_1_IP=68.183.235.99
 export OKD_WORKER_NODE_1_HOSTNAME=node1
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_2_IP=167.71.200.54
-export OKD_WORKER_NODE_2_HOSTNAME=node2
+#export OKD_WORKER_NODE_2_IP=167.71.200.54
+#export OKD_WORKER_NODE_2_HOSTNAME=node2
 
 
 #OKD Infra Node 1 Configuration
-export OKD_INFRA_NODE_1_IP=167.71.207.220
+export OKD_INFRA_NODE_1_IP=68.183.237.135
 export OKD_INFRA_NODE_1_HOSTNAME=infra1
 
 
 #OKD Infra Node 1 Configuration
-export OKD_INFRA_NODE_2_IP=167.71.200.2
-export OKD_INFRA_NODE_2_HOSTNAME=infra2
+#export OKD_INFRA_NODE_2_IP=167.71.200.2
+#export OKD_INFRA_NODE_2_HOSTNAME=infra2
 
 
 #The  below setting will be used to access OKD console https://console.$DOMAIN:$API_PORT"
