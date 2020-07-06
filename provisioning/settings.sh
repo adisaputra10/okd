@@ -6,33 +6,32 @@
 export OKD_VERSION=3.11
 
 #OKD Master Node Configuration
-export OKD_MASTER_IP=159.65.4.151
-export OKD_MASTER_HOSTNAME=master
+export OKD_MASTER_IP=134.209.103.184
+export OKD_MASTER_HOSTNAME=master-satu
+
+#OKD Master Node Configuration
+export OKD_MASTER_IP_2=165.22.98.121
+export OKD_MASTER_HOSTNAME_2=master-dua
+
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_1_IP=178.128.91.46
+export OKD_WORKER_NODE_1_IP=165.22.102.117
 export OKD_WORKER_NODE_1_HOSTNAME=node-satu
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_2_IP=104.248.144.123
+export OKD_WORKER_NODE_2_IP=178.128.213.78
 export OKD_WORKER_NODE_2_HOSTNAME=node-dua
 
-#OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_3_IP=68.183.238.177
-export OKD_WORKER_NODE_3_HOSTNAME=node-tiga
-
-
-
 
 
 #OKD Infra Node 1 Configuration
-export OKD_INFRA_NODE_1_IP=209.97.164.47
-export OKD_INFRA_NODE_1_HOSTNAME=infra
+export OKD_INFRA_NODE_1_IP=165.22.98.138
+export OKD_INFRA_NODE_1_HOSTNAME=infra-satu
 
 
 #OKD Infra Node 1 Configuration
-#export OKD_INFRA_NODE_2_IP=167.71.200.2
-#export OKD_INFRA_NODE_2_HOSTNAME=infra2
+export OKD_INFRA_NODE_2_IP=165.22.102.102
+export OKD_INFRA_NODE_2_HOSTNAME=infra-dua
 
 
 #The  below setting will be used to access OKD console https://console.$DOMAIN:$API_PORT"
