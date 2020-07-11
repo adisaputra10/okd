@@ -6,17 +6,21 @@
 export OKD_VERSION=3.11
 
 #OKD Master Node Configuration
-export OKD_MASTER_IP=178.128.102.39
-export OKD_MASTER_HOSTNAME=master
+export OKD_MASTER_IP=178.128.114.52
+export OKD_MASTER_HOSTNAME=master-satu
+
+export OKD_MASTER_IP_2=68.183.238.34
+export OKD_MASTER_HOSTNAM_2E=master-dua
+
 
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_1_IP=178.128.23.12
-export OKD_WORKER_NODE_1_HOSTNAME=node1
+export OKD_WORKER_NODE_1_IP=68.183.176.121
+export OKD_WORKER_NODE_1_HOSTNAME=node
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_2_IP=209.97.172.117
-export OKD_WORKER_NODE_2_HOSTNAME=node2
+#export OKD_WORKER_NODE_2_IP=209.97.172.117
+#export OKD_WORKER_NODE_2_HOSTNAME=node2
 
 
 #OKD Worker Node 1 Configuration
@@ -26,13 +30,10 @@ export OKD_WORKER_NODE_2_HOSTNAME=node2
 
 
 #OKD Infra Node 1 Configuration
-export OKD_INFRA_NODE_1_IP=178.128.100.183
-export OKD_INFRA_NODE_1_HOSTNAME=infra1
+export OKD_INFRA_NODE_1_IP=134.209.99.41
+export OKD_INFRA_NODE_1_HOSTNAME=infra
 
 
-#OKD Infra Node 1 Configuration
-export OKD_INFRA_NODE_2_IP=178.128.106.166
-export OKD_INFRA_NODE_2_HOSTNAME=infra2
 
 
 #The  below setting will be used to access OKD console https://console.$DOMAIN:$API_PORT"
