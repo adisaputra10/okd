@@ -16,7 +16,6 @@ ${OKD_WORKER_NODE_1_IP} openshift_ip=${OKD_WORKER_NODE_1_IP} openshift_node_grou
 ${OKD_INFRA_NODE_1_IP} openshift_ip=${OKD_INFRA_NODE_1_IP} openshift_node_group_name='node-config-infra'
 ${OKD_WORKER_NODE_2_IP} openshift_ip=${OKD_WORKER_NODE_2_IP} openshift_node_group_name='node-config-compute'
 ${OKD_INFRA_NODE_2_IP} openshift_ip=${OKD_INFRA_NODE_2_IP} openshift_node_group_name='node-config-infra'
-${OKD_WORKER_NODE_3_IP} openshift_ip=${OKD_WORKER_NODE_3_IP} openshift_node_group_name='node-config-compute'
 
 
 [OSEv3:vars]
