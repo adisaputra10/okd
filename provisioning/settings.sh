@@ -6,12 +6,12 @@
 export OKD_VERSION=3.11
 
 #OKD Master Node Configuration
-export OKD_MASTER_IP=167.99.67.254
+export OKD_MASTER_IP=178.128.88.90
 export OKD_MASTER_HOSTNAME=master
 
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_1_IP=157.230.32.24
+export OKD_WORKER_NODE_1_IP=178.128.124.221
 export OKD_WORKER_NODE_1_HOSTNAME=node
 
 #OKD Worker Node 1 Configuration
@@ -26,7 +26,7 @@ export OKD_WORKER_NODE_1_HOSTNAME=node
 
 
 #OKD Infra Node 1 Configuration
-export OKD_INFRA_NODE_1_IP=157.230.32.27
+export OKD_INFRA_NODE_1_IP=104.248.148.194
 export OKD_INFRA_NODE_1_HOSTNAME=infra
 
 #export OKD_INFRA_NODE_2_IP=128.199.116.104
