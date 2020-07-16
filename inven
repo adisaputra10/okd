@@ -2,26 +2,40 @@
 masters
 nodes
 etcd
+lb
 new_nodes
+new_masters
+new_etcd
 
 [masters]
-178.128.88.81 openshift_ip=178.128.88.81 openshift_schedulable=true 
+178.128.88.90 openshift_ip=178.128.88.90 openshift_schedulable=true 
+
+
+[new_masters]
+178.128.29.123 openshift_ip=178.128.29.123 openshift_node_group_name='node-config-master'
+
+[new_etcd]
+178.128.29.123 openshift_ip=178.128.29.123 
 
 [etcd]
-178.128.88.81 openshift_ip=178.128.88.81
+178.128.88.90 openshift_ip=178.128.88.90
+178.128.29.123 openshift_ip=178.128.29.123
 
 [nodes]
-178.128.88.81 openshift_ip=178.128.88.81 openshift_node_group_name='node-config-master'
-178.128.88.84 openshift_ip=178.128.88.84 openshift_node_group_name='node-config-compute'
-178.128.92.107 openshift_ip=178.128.92.107 openshift_node_group_name='node-config-infra'
+178.128.88.90 openshift_ip=178.128.88.90 openshift_node_group_name='node-config-master'
+178.128.124.221 openshift_ip=178.128.124.221 openshift_node_group_name='node-config-compute'
+104.248.148.194 openshift_ip=104.248.148.194 openshift_node_group_name='node-config-infra'
+178.62.194.251 openshift_ip=178.62.194.251 openshift_node_group_name='node-config-compute'
+178.62.197.17 openshift_ip=178.62.197.17 openshift_node_group_name='node-config-infra'
+
 
 [new_nodes]
-178.62.192.166  openshift_ip=178.62.192.166 openshift_node_group_name='node-config-infra'
+178.128.29.123 openshift_ip=178.128.29.123 openshift_node_group_name='node-config-master'
 
 
 
 [lb]
-178.128.92.107 openshift_ip=178.128.92.107
+165.22.246.130 openshift_ip=165.22.246.130
 
 [OSEv3:vars]
 openshift_additional_repos=[{'id': 'centos-paas', 'name': 'centos-paas', 'baseurl' :'https://buildlogs.centos.org/centos/7/paas/x86_64/openshift-origin311', 'gpgcheck' :'0', 'enabled' :'1'}]
@@ -51,6 +65,7 @@ openshift_logging_install_logging=False
 
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
 openshift_master_htpasswd_file='/etc/origin/master/htpasswd'
+
 
 openshift_master_default_subdomain=apps.okd.nip.io
 
