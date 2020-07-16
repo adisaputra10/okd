@@ -3,13 +3,10 @@ masters
 nodes
 etcd
 lb
-new_nodes
-new_masters
-new_etcd
 
 [masters]
 178.128.88.90 openshift_ip=178.128.88.90 openshift_schedulable=true 
-
+178.128.29.123 openshift_ip=178.128.29.123 openshift_schedulable=true
 
 [new_masters]
 178.128.29.123 openshift_ip=178.128.29.123 openshift_node_group_name='node-config-master'
@@ -22,6 +19,7 @@ new_etcd
 178.128.29.123 openshift_ip=178.128.29.123
 
 [nodes]
+178.128.29.123 openshift_ip=178.128.29.123 openshift_node_group_name='node-config-master'
 178.128.88.90 openshift_ip=178.128.88.90 openshift_node_group_name='node-config-master'
 178.128.124.221 openshift_ip=178.128.124.221 openshift_node_group_name='node-config-compute'
 104.248.148.194 openshift_ip=104.248.148.194 openshift_node_group_name='node-config-infra'
