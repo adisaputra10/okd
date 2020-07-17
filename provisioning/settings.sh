@@ -6,31 +6,20 @@
 export OKD_VERSION=3.11
 
 #OKD Master Node Configuration
-export OKD_MASTER_IP=178.128.88.90
+export OKD_MASTER_IP=178.128.115.171
 export OKD_MASTER_HOSTNAME=master
 
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_1_IP=178.128.124.221
+export OKD_WORKER_NODE_1_IP=157.230.249.182
 export OKD_WORKER_NODE_1_HOSTNAME=node
-
-#OKD Worker Node 1 Configuration
-#export OKD_WORKER_NODE_2_IP=128.199.112.61
-#export OKD_WORKER_NODE_2_HOSTNAME=node-dua
-
-
-#OKD Worker Node 1 Configuration
-#export OKD_WORKER_NODE_3_IP=157.230.245.100
-#export OKD_WORKER_NODE_3_HOSTNAME=node-tiga
 
 
 
 #OKD Infra Node 1 Configuration
-export OKD_INFRA_NODE_1_IP=104.248.148.194
+export OKD_INFRA_NODE_1_IP=157.230.253.250
 export OKD_INFRA_NODE_1_HOSTNAME=infra
 
-#export OKD_INFRA_NODE_2_IP=128.199.116.104
-#export OKD_INFRA_NODE_2_HOSTNAME=infra-dua
 
 
 
