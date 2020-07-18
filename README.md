@@ -213,12 +213,21 @@ The ***okd Console*** can be accessed via the below URL from your local machine
 # GlusterFS
 
 `yum install -y  git nano` 
+
 `yum -y install epel-release`
+
 `yum -y install yum-priorities`
+
 `yum -y install centos-release-gluster`
+
 `yum -y install glusterfs-server gluster* -y`
+
 `systemctl enable glusterd.service`
+
 `systemctl start glusterd.service`
+
 `systemctl status glusterd.service`
+
 `mkdir -p /data/glusterfs/v1`
+
 `gluster volume create v1 glusterfs:/data/glusterfs/v1 force`
