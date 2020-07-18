@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx1-pv
+  labels:
+    name: nginx1-pv
+spec:
+  containers:
+  - name: hello-openshift-pod
+    image: telkomindonesia/debian:php-7.4-nginx
+    ports:
+    - name: web
+      containerPort: 80
+    volumeMounts:
+    - name: gluster-vol1
+      mountPath: /var/www/html/data/
+      readOnly: false
+  volumes:
+  - name: gluster-vol1
+    persistentVolumeClaim:
+      claimName: nginx
