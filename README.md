@@ -225,3 +225,6 @@ The ***okd Console*** can be accessed via the below URL from your local machine
 `gluster volume create v1 glusterfs:/data/glusterfs/v1 force`
 
 `gluster volume start v1`
+
+# Set Label
+`oc label nodes worker02-kubernetes.bkn.go.id worker=worker2`
